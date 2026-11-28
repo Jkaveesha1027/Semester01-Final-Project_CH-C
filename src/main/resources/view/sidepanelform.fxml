@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="978.0" prefWidth="1416.0" style="-fx-background-color: #fff#008cfffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.SidepanelformController">
+<AnchorPane fx:id="rootNode" prefHeight="978.0" prefWidth="1416.0" style="-fx-background-color: #fff#008cfffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.SidepanelformController">
    <children>
       <AnchorPane fx:id="childRootNode" layoutX="325.0" layoutY="75.0" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-color: EEEEEEFF; -fx-background-radius: 30;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="75.0" />
       <AnchorPane layoutY="2.0" prefHeight="978.0" prefWidth="317.0" style="-fx-background-color: white;">
@@ -41,7 +43,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="309.0" onAction="#btnCustomerOnAction" prefHeight="59.0" prefWidth="270.0" style="-fx-background-radius: 15;" styleClass="nav-btn" text="               Customer" textFill="WHITE" AnchorPane.leftAnchor="26.0">
+            <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="309.0" onAction="#btnCustomerOnAction" prefHeight="59.0" prefWidth="270.0" style="-fx-background-radius: 15;" styleClass="nav-btn" text="               Customer" textFill="WHITE" AnchorPane.leftAnchor="23.0">
                <stylesheets>
                   <URL value="@../css/sidePane.css" />
                   <URL value="@../css/sidePane.css" />
@@ -68,7 +70,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="513.0" onAction="#btnRepairOnAction" prefHeight="59.0" prefWidth="270.0" style="-fx-background-radius: 15;" styleClass="nav-btn" text="         Repair" textFill="WHITE" AnchorPane.leftAnchor="25.0">
+            <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="513.0" onAction="#btnRepairOnAction" prefHeight="59.0" prefWidth="270.0" style="-fx-background-radius: 15;" styleClass="nav-btn" text="         Repair" textFill="WHITE" AnchorPane.leftAnchor="23.0">
                <stylesheets>
                   <URL value="@../css/sidePane.css" />
                   <URL value="@../css/sidePane.css" />
@@ -95,7 +97,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="715.0" onAction="#btnLogOutOnAction" prefHeight="48.0" prefWidth="270.0" stylesheets="@../css/sidePane.css" text="           Log out" textFill="WHITE" AnchorPane.leftAnchor="26.0">
+            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="726.0" onAction="#btnLogOutOnAction" prefHeight="48.0" prefWidth="270.0" stylesheets="@../css/sidePane.css" text="           Log out" textFill="WHITE" AnchorPane.leftAnchor="26.0">
                <styleClass>
                   <String fx:value="logout" />
                   <String fx:value="shadow" />
@@ -104,7 +106,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <Pane layoutX="23.0" layoutY="14.0" prefHeight="85.0" prefWidth="270.0" style="-fx-background-color: black; -fx-background-radius: 20;" styleClass="shadow1" stylesheets="@../css/sidePane.css">
+            <Pane layoutX="23.0" layoutY="3.0" prefHeight="97.0" prefWidth="270.0" style="-fx-background-color: black; -fx-background-radius: 20;" styleClass="shadow1" stylesheets="@../css/sidePane.css">
                <children>
                   <ImageView fitHeight="67.0" fitWidth="90.0" layoutX="14.0" layoutY="9.0">
                      <image>
@@ -171,7 +173,7 @@
                   <Image url="@../icon/report.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="61.0" layoutY="720.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="61.0" layoutY="732.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icon/logout.png" />
                </image>
