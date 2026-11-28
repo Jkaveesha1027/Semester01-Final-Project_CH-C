@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.SupplierFormController">
+<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.SupplierFormController">
    <children>
-      <AnchorPane layoutX="27.0" layoutY="96.0" prefHeight="284.0" prefWidth="1013.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css">
+      <AnchorPane layoutX="25.0" layoutY="49.0" prefHeight="284.0" prefWidth="1013.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css">
          <children>
             <Label layoutX="82.0" layoutY="46.0" prefHeight="21.0" prefWidth="115.0" text="Supplier ID :">
                <font>
@@ -56,7 +56,7 @@
             <JFXButton buttonType="RAISED" layoutX="872.0" layoutY="215.0" onAction="#btnSupplierReportOnAction" prefHeight="41.0" prefWidth="108.0" styleClass="sale" stylesheets="@../css/style.css" text="Report" />
          </children>
       </AnchorPane>
-      <TableView fx:id="tblSupplier" layoutX="25.0" layoutY="455.0" prefHeight="407.0" prefWidth="1025.0" stylesheets="@../css/sidePane.css">
+      <TableView fx:id="tblSupplier" layoutX="19.0" layoutY="394.0" prefHeight="284.0" prefWidth="1026.0" stylesheets="@../css/sidePane.css">
          <columns>
             <TableColumn fx:id="colSupId" prefWidth="87.0" text="Sup ID" />
             <TableColumn fx:id="colCompanyName" prefWidth="170.0" text="Campnay Name" />
@@ -66,12 +66,12 @@
             <TableColumn fx:id="colEmail" prefWidth="223.0" text="Email" />
          </columns>
       </TableView>
-      <Label layoutX="389.0" layoutY="31.0" prefHeight="30.0" prefWidth="302.0" text="Supplier Management" textFill="#00a0ff">
+      <Label layoutX="389.0" layoutY="14.0" prefHeight="30.0" prefWidth="302.0" text="Supplier Management" textFill="#00a0ff">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Pane layoutX="25.0" layoutY="396.0" prefHeight="47.0" prefWidth="302.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
+      <Pane layoutX="35.0" layoutY="340.0" prefHeight="47.0" prefWidth="302.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
          <children>
             <TextField fx:id="txtSearchSupplier" layoutX="14.0" layoutY="2.0" onAction="#txtSearchSupplierOnAction" prefHeight="43.0" prefWidth="194.0" promptText="Search Company Name" style="-fx-background-color: transparent;" />
             <JFXButton layoutX="211.0" layoutY="8.0" onAction="#btnSearchSupplierOnAction" prefHeight="31.0" prefWidth="77.0" style="-fx-background-radius: 20;" styleClass="sale" stylesheets="@../css/style.css" text="Search" textFill="WHITE" />
