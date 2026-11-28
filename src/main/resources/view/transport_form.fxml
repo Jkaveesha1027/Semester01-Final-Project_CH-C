@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="890.0" prefWidth="1080.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.TransportFormController">
+<AnchorPane prefHeight="890.0" prefWidth="1080.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.TransportFormController">
    <children>
-      <AnchorPane layoutX="45.0" layoutY="84.0" prefHeight="250.0" prefWidth="998.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css">
+      <AnchorPane layoutX="41.0" layoutY="52.0" prefHeight="214.0" prefWidth="998.0" style="-fx-background-color: E7E7E7FF; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css">
          <children>
             <Label layoutX="33.0" layoutY="29.0" prefHeight="37.0" prefWidth="128.0" text="Transport ID :">
                <font>
@@ -63,29 +63,29 @@
                   <Font name="Arial Rounded MT Bold" size="14.0" />
                </font>
             </TextField>
-            <JFXButton buttonType="RAISED" layoutX="624.0" layoutY="194.0" onAction="#btnUpdateOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Update" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="623.0" layoutY="170.0" onAction="#btnUpdateOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Update" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="866.0" layoutY="194.0" onAction="#btnClearOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Clear" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="864.0" layoutY="170.0" onAction="#btnClearOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Clear" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="498.0" layoutY="194.0" onAction="#btnSaveOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Save" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="499.0" layoutY="170.0" onAction="#btnSaveOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Save" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="746.0" layoutY="194.0" onAction="#btnDeleteOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Delete" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="745.0" layoutY="170.0" onAction="#btnDeleteOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Delete" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <TableView fx:id="tblTransport" layoutX="49.0" layoutY="419.0" prefHeight="439.0" prefWidth="524.0" stylesheets="@../css/sidePane.css">
+      <TableView fx:id="tblTransport" layoutX="41.0" layoutY="331.0" prefHeight="370.0" prefWidth="524.0" stylesheets="@../css/sidePane.css">
         <columns>
           <TableColumn fx:id="colTransportId" prefWidth="99.0" text="Transport ID" />
           <TableColumn fx:id="colVehicalNo" prefWidth="121.0" text="Vehical No" />
@@ -94,13 +94,13 @@
             <TableColumn fx:id="colCost" prefWidth="87.0" text="Cost" />
         </columns>
       </TableView>
-      <AnchorPane fx:id="mapRootNode" layoutX="592.0" layoutY="371.0" prefHeight="487.0" prefWidth="446.0" style="-fx-background-color: white;" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" />
-      <Label layoutX="379.0" layoutY="22.0" prefHeight="37.0" prefWidth="338.0" text="Transport Management" textFill="#0088ff">
+      <AnchorPane fx:id="mapRootNode" layoutX="583.0" layoutY="275.0" prefHeight="424.0" prefWidth="446.0" style="-fx-background-color: white;" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" />
+      <Label layoutX="375.0" layoutY="14.0" prefHeight="37.0" prefWidth="338.0" text="Transport Management" textFill="#0088ff">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Pane layoutX="45.0" layoutY="355.0" prefHeight="47.0" prefWidth="302.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
+      <Pane layoutX="41.0" layoutY="275.0" prefHeight="47.0" prefWidth="302.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
          <children>
             <TextField fx:id="txtSearchLocation" layoutX="14.0" layoutY="2.0" onAction="#txtSearchLocationOnAction" prefHeight="43.0" prefWidth="194.0" promptText="Searcch Location" style="-fx-background-color: transparent;" />
             <JFXButton layoutX="215.0" layoutY="8.0" onAction="#btnSearchLocationOnAction" prefHeight="31.0" prefWidth="77.0" style="-fx-background-radius: 20;" styleClass="sale" stylesheets="@../css/style.css" text="Search" textFill="WHITE" />
