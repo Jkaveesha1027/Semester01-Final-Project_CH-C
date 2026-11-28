@@ -10,37 +10,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.LoginFormController">
+<AnchorPane fx:id="rootNode" prefHeight="929.0" prefWidth="1792.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.LoginFormController">
    <children>
-      <ImageView fitHeight="550.0" fitWidth="400.0" layoutX="400.0" opacity="0.82">
+      <ImageView fitHeight="929.0" fitWidth="1240.0" layoutX="553.0" layoutY="-1.0" opacity="0.82">
          <image>
             <Image url="@../image/Turquoise Blue Shoes Realistic Product Promotion Facebook Post(1).png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="550.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="991.0" fitWidth="676.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-62.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1117.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../image/Dark modern tech products promo carousel Instagram post (400 x 550 px).png" />
          </image>
       </ImageView>
-      <Label layoutX="539.0" layoutY="49.0" text="Log In" textFill="#05bef3">
+      <Label layoutX="1142.0" layoutY="48.0" prefHeight="75.0" prefWidth="101.0" text="Log In" textFill="#05bef3">
          <font>
             <Font name="Ubuntu Bold" size="36.0" />
          </font></Label>
-      <TextField fx:id="txtUserName" layoutX="466.0" layoutY="280.0" onAction="#txtUserNameOnAction" onKeyReleased="#txtUserNameOnKeyRelesed" prefHeight="44.0" prefWidth="269.0" promptText="\@User Name" style="-fx-background-radius: 5;" />
-      <JFXButton buttonType="RAISED" layoutX="501.0" layoutY="430.0" onAction="#btnLoginOnAction" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #05BEF3; -fx-background-radius: 20;" text="Log in" textFill="WHITE">
+      <TextField fx:id="txtUserName" layoutX="1071.0" layoutY="346.0" onAction="#txtUserNameOnAction" onKeyReleased="#txtUserNameOnKeyRelesed" prefHeight="44.0" prefWidth="269.0" promptText="\@User Name" style="-fx-background-radius: 5;" />
+      <JFXButton buttonType="RAISED" layoutX="1110.0" layoutY="541.0" onAction="#btnLoginOnAction" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #05BEF3; -fx-background-radius: 20;" text="Log in" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXButton>
-      <Label layoutX="476.0" layoutY="496.0" text="Do you don't have any account?">
+      <Label layoutX="696.0" layoutY="817.0" prefHeight="22.0" prefWidth="156.0" text="Do you don't have any account?">
          <font>
             <Font size="11.0" />
          </font></Label>
-      <Hyperlink layoutX="660.0" layoutY="493.0" onAction="#hyperRegistrationOnAction" style="-fx-effect: shadow;" text="Register">
+      <Hyperlink layoutX="1254.0" layoutY="809.0" onAction="#hyperRegistrationOnAction" prefHeight="30.0" prefWidth="58.0" style="-fx-effect: shadow;" text="Register">
          <font>
             <Font size="11.0" />
          </font></Hyperlink>
-      <PasswordField fx:id="txtPassword" layoutX="466.0" layoutY="341.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPasswordOnActionKeyReleased" prefHeight="44.0" prefWidth="269.0" promptText="\@Password" style="-fx-background-radius: 5;" />
-      <ImageView fitHeight="105.0" fitWidth="113.0" layoutX="542.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+      <PasswordField fx:id="txtPassword" layoutX="1071.0" layoutY="432.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPasswordOnActionKeyReleased" prefHeight="44.0" prefWidth="269.0" promptText="\@Password" style="-fx-background-radius: 5;" />
+      <ImageView fitHeight="146.0" fitWidth="156.0" layoutX="1120.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
          <image>
             <Image url="@../icon/manager.png" />
          </image>
