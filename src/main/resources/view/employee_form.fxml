@@ -11,13 +11,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-color: transperant; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.EmployeeFormController">
+<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-color: transperant; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.EmployeeFormController">
    <children>
-      <AnchorPane layoutX="21.0" layoutY="73.0" prefHeight="433.0" prefWidth="1031.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 15;" styleClass="shadow1" stylesheets="@../css/sidePane.css">
+      <AnchorPane layoutX="17.0" layoutY="51.0" prefHeight="406.0" prefWidth="1046.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 15;" styleClass="shadow1" stylesheets="@../css/sidePane.css">
          <children>
-            <Pane fx:id="main_pain" layoutX="58.0" layoutY="235.0" prefHeight="176.0" prefWidth="153.0" style="-fx-background-color: white;">
+            <Pane fx:id="main_pain" layoutX="58.0" layoutY="235.0" prefHeight="158.0" prefWidth="154.0" style="-fx-background-color: white;">
                <children>
-                  <ImageView fx:id="ImgView" fitHeight="176.0" fitWidth="153.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="ImgView" fitHeight="158.0" fitWidth="153.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </Pane>
             <JFXButton buttonType="RAISED" layoutX="543.0" layoutY="349.0" onAction="#btnUpdateOnAction" prefWidth="100.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Update" textFill="WHITE">
@@ -70,7 +70,7 @@
                   <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="35.0" layoutY="22.0" prefHeight="37.0" prefWidth="170.0" text="Employee ID">
+            <Label layoutX="35.0" layoutY="23.0" prefHeight="37.0" prefWidth="170.0" text="Employee ID">
                <font>
                   <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
@@ -137,37 +137,37 @@
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="273.0" onAction="#btnImportImgOnAction" prefHeight="37.0" prefWidth="112.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Import" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="246.0" onAction="#btnImportImgOnAction" prefHeight="37.0" prefWidth="112.0" ripplerFill="BLACK" styleClass="sale" stylesheets="@../css/style.css" text="Import" textFill="WHITE">
                <font>
                   <Font name="Arial Rounded MT Bold" size="16.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <TableView fx:id="tblCustomer" layoutX="25.0" layoutY="586.0" prefHeight="283.0" prefWidth="1031.0" stylesheets="@../css/sidePane.css">
+      <TableView fx:id="tblCustomer" layoutX="17.0" layoutY="524.0" prefHeight="187.0" prefWidth="1054.0" stylesheets="@../css/sidePane.css">
          <columns>
             <TableColumn fx:id="colEid" prefWidth="94.0" text="ID" />
             <TableColumn fx:id="colName" prefWidth="158.0" text="Name" />
             <TableColumn fx:id="colNic" prefWidth="128.0" text="NIC" />
             <TableColumn fx:id="colTel" prefWidth="146.0" text="Tel Number" />
             <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="177.0" text="Email" />
-            <TableColumn fx:id="colPosition" prefWidth="112.0" text="Position" />
-            <TableColumn fx:id="colDob" prefWidth="113.0" text="DOB" />
-            <TableColumn fx:id="colDOR" prefWidth="102.0" text="D O Rejistar" />
+            <TableColumn fx:id="colPosition" prefWidth="128.0" text="Position" />
+            <TableColumn fx:id="colDob" prefWidth="106.39996337890625" text="DOB" />
+            <TableColumn fx:id="colDOR" prefWidth="112.800048828125" text="D O Rejistar" />
          </columns>
       </TableView>
-      <Label layoutX="375.0" layoutY="16.0" prefHeight="37.0" prefWidth="332.0" text="Employee Management" textFill="#0088ff">
+      <Label layoutX="375.0" layoutY="7.0" prefHeight="37.0" prefWidth="332.0" text="Employee Management" textFill="#0088ff">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Pane layoutX="25.0" layoutY="527.0" prefHeight="47.0" prefWidth="253.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
+      <Pane layoutX="25.0" layoutY="469.0" prefHeight="47.0" prefWidth="253.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
          <children>
             <TextField fx:id="txtSearchEmployee" layoutX="14.0" layoutY="2.0" onAction="#txtSearchEmployeeOnAction" prefHeight="43.0" prefWidth="149.0" promptText="Employee Id" style="-fx-background-color: transparent;" />
             <JFXButton layoutX="163.0" layoutY="8.0" onAction="#btnSearchEmployeeOnAction" prefHeight="31.0" prefWidth="77.0" style="-fx-background-radius: 20;" styleClass="sale" stylesheets="@../css/style.css" text="Search" textFill="WHITE" />
          </children>
       </Pane>
-      <JFXButton buttonType="RAISED" layoutX="314.0" layoutY="535.0" onAction="#btnScanOnAction" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-radius: 15;" styleClass="sale" stylesheets="@../css/style.css" text="Scan" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="302.0" layoutY="477.0" onAction="#btnScanOnAction" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-radius: 15;" styleClass="sale" stylesheets="@../css/style.css" text="Scan" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="16.0" />
          </font>
