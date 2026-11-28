@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.BrandNewItemFormController">
+<AnchorPane fx:id="rootNode" prefHeight="890.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chama.controller.BrandNewItemFormController">
    <children>
-      <AnchorPane layoutX="26.0" layoutY="82.0" prefHeight="391.0" prefWidth="1032.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="82.0">
+      <AnchorPane layoutX="27.2" layoutY="52.0" prefHeight="396.0" prefWidth="1008.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 20;" stylesheets="@../css/sidePane.css" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="52.0">
          <children>
             <TextField fx:id="txtQty" layoutX="587.0" layoutY="181.0" onAction="#txtQtyOnAction" onKeyReleased="#txtQtyOnKeyRelesed" prefHeight="28.0" prefWidth="60.0" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" />
             <Label layoutX="526.0" layoutY="183.0" prefHeight="21.0" prefWidth="48.0" text="Qty :">
@@ -39,12 +39,12 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="96.0" layoutY="26.0" prefHeight="21.0" prefWidth="84.0" text="Item ID :" AnchorPane.bottomAnchor="372.0" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="852.0" AnchorPane.topAnchor="26.0">
+            <Label layoutX="89.0" layoutY="28.0" prefHeight="27.0" prefWidth="77.0" text="Item ID :" AnchorPane.bottomAnchor="370.4" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="842.2" AnchorPane.topAnchor="28.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtItemId" layoutX="187.0" layoutY="23.0" onAction="#txtItemId" onKeyReleased="#txtitemIdOnKeyRelese" prefHeight="28.0" prefWidth="95.0" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="23.0" />
+            <TextField fx:id="txtItemId" layoutX="187.0" layoutY="23.0" onAction="#txtItemId" onKeyReleased="#txtitemIdOnKeyRelese" prefHeight="31.0" prefWidth="124.0" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" AnchorPane.bottomAnchor="371.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="697.0" AnchorPane.topAnchor="23.0" />
             <TextField fx:id="txtName" layoutX="187.0" layoutY="76.0" onAction="#txtNameOnAction" prefHeight="28.0" prefWidth="178.0" styleClass="blue-box-text-field" stylesheets="@../css/sidePane.css" />
             <Label layoutX="57.0" layoutY="78.0" prefHeight="21.0" prefWidth="124.0" text="Item Name  :">
                <font>
@@ -104,7 +104,7 @@
             <JFXComboBox fx:id="cmbType" layoutX="584.0" layoutY="22.0" onAction="#cmbtypeOnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: white;" styleClass="blue-text-Field" stylesheets="@../css/sidePane.css" unFocusColor="WHITE" />
             <DatePicker fx:id="txtDate" layoutX="585.0" layoutY="72.0" onAction="#txtDateOnAction" prefHeight="32.0" prefWidth="178.0" styleClass="blue-text-Field" stylesheets="@../css/sidePane.css" />
          </children></AnchorPane>
-      <TableView fx:id="tableBrandNewItem" layoutX="26.0" layoutY="568.0" prefHeight="288.0" prefWidth="1032.0" stylesheets="@../css/sidePane.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="568.0">
+      <TableView fx:id="tableBrandNewItem" layoutX="15.0" layoutY="538.0" prefHeight="164.0" prefWidth="1030.0" stylesheets="@../css/sidePane.css" AnchorPane.bottomAnchor="188.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="538.0">
          <columns>
             <TableColumn fx:id="colItemId" prefWidth="75.0" text="Item ID" />
             <TableColumn fx:id="colName" prefWidth="227.0" text="Item Name" />
@@ -116,12 +116,12 @@
          </columns>
       </TableView>
       <Label fx:id="lblSupCompany" layoutX="733.0" layoutY="272.0" prefHeight="16.0" prefWidth="2.0" />
-      <Label layoutX="432.0" layoutY="22.0" prefHeight="37.0" prefWidth="259.0" text="Item Management" textFill="#008cff">
+      <Label layoutX="432.0" layoutY="14.0" prefHeight="37.0" prefWidth="259.0" text="Item Management" textFill="#008cff">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Pane layoutX="26.0" layoutY="512.0" prefHeight="47.0" prefWidth="272.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
+      <Pane layoutX="26.0" layoutY="484.0" prefHeight="47.0" prefWidth="272.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 50;">
          <children>
             <TextField fx:id="txtSearchItemName" layoutX="14.0" layoutY="2.0" onAction="#txtSearchItemNameOnAction" prefHeight="43.0" prefWidth="165.0" promptText="Search Item" style="-fx-background-color: transparent;" />
             <JFXButton layoutX="185.0" layoutY="8.0" onAction="#btnSearchItemNameOnAction" prefHeight="31.0" prefWidth="77.0" style="-fx-background-radius: 20;" styleClass="sale" stylesheets="@../css/style.css" text="Search" textFill="WHITE" />
